@@ -25,7 +25,7 @@ def main():
 	for result in spins:
 		lastResult = result
 		if result:
-			if consecutiveFalse >= 4:
+			if consecutiveFalse >= STREAK_SIZE:
 				total += 1
 				successful += 1
 			consecutiveFalse = 0
